@@ -1,0 +1,84 @@
+
+	
+	/*pie de pagina*/
+	footer{ color: #c6cad2; font-size: 15px; line-height: 1px; font-family: Source Sans Pro Black, sans-serif;  padding-top: 30px;}
+
+
+
+	/*TITULO DE LOGIN */
+	.block-header1{text-align: center; margin-bottom: 35px;}
+	.block-header1 .title{font-size: 30px; line-height: 25px; color: #232c3b; font-family: Bernard MT Condensed, sans-serif; margin-bottom: 9px;}
+	.button1 input{position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: none; opacity: 0;}
+	
+	/*forma inputs usuario */
+	.field-entry1{margin-bottom: 16px;}
+	.field-entry2{margin-bottom: 16px;}
+	.field-entry3{margin-bottom: 16px;}
+	.field-entry4{margin-bottom: 16px;}
+	.field-entry5{margin-bottom: 16px;}
+	.field-entry7{margin-bottom: 16px;}
+	.field-entry1 label{display: block; font-size: 16px; color: #232c3b; line-height: 12px; margin-bottom: 4px; padding: 0 5px;}
+	.field-entry2 label{display: block; font-size: 16px; color: #232c3b; line-height: 12px; margin-bottom: 4px; padding: 0 5px;}
+	.field-entry3 label{display: block; font-size: 16px; color: #232c3b; line-height: 12px; margin-bottom: 4px; padding: 0 5px;}
+	.field-entry4 label{display: block; font-size: 16px; color: #232c3b; line-height: 12px; margin-bottom: 4px; padding: 0 5px;}
+	.field-entry5 label{display: block; font-size: 16px; color: #232c3b; line-height: 12px; margin-bottom: 4px; padding: 0 5px;}
+	.field-entry7 label{display: block; font-size: 16px; color: #232c3b; line-height: 12px; margin-bottom: 4px; padding: 0 5px;}
+	.field-entry1 input, .field-entry1 textarea{width: 100%; height: 30px; -webkit-border-radius: 75px; border-radius: 10px; background-color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2); box-shadow: 1px 1px 2px rgba(0,0,0,.2); line-height: 50px; padding: 0 16px; border: none; font-size: 18px; color: #6a7483;}
+	.field-entry2 input, .field-entry1 textarea{width: 86%; height: 30px; -webkit-border-radius: 75px; border-radius: 10px; background-color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2); box-shadow: 1px 1px 2px rgba(0,0,0,.2); line-height: 50px; padding: 0 16px; border: none; font-size: 18px; color: #6a7483;}
+	.field-entry3 input, .field-entry1 textarea{width: 100%; height: 30px; -webkit-border-radius: 75px; border-radius: 10px; background-color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2); box-shadow: 1px 1px 2px rgba(0,0,0,.2); line-height: 50px; padding: 0 16px; border: none; font-size: 18px; color: #6a7483;}
+	.field-entry4 input, .field-entry4 textarea{width: 90%; height: 30px; -webkit-border-radius: 75px; border-radius: 10px; background-color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2); box-shadow: 1px 1px 2px rgba(0,0,0,.2); line-height: 50px; padding: 0 16px; border: none; font-size: 18px; color: #6a7483;}
+	.field-entry5 input, .field-entry5 textarea{width: 155%; height: 30px; -webkit-border-radius: 75px; border-radius: 10px; background-color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2); box-shadow: 1px 1px 2px rgba(0,0,0,.2); line-height: 50px; padding: 0 16px; border: none; font-size: 18px; color: #6a7483;}
+	.field-entry7 input, .field-entry7 textarea{width: 100%; height: 110px; -webkit-border-radius: 75px; border-radius: 10px; background-color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2); box-shadow: 1px 1px 2px rgba(0,0,0,.2); line-height: 50px; padding: 0 16px; border: none; font-size: 18px; color: #6a7483;}
+	
+	
+	/*forma block login imagen colores tamano y margen*/
+	.forma-block1{-webkit-border-radius: 90px; border-radius: 25px; background-color: #CCFFFF; -webkit-box-shadow: 1px 1px rgba(0,0,0,.05); box-shadow: 1px 1px rgba(0,0,0,.05); padding-top: 65px; padding-bottom: 20px; margin-top: 55px; margin-bottom: 10px; position: relative;}
+	.forma-wrapper1{padding: 0 90px;}
+	.forma-block1 .button1{display: block;}
+	.forma-block1 .forma-icono1{position: absolute; left: 46%; top: 0; margin: -60px 0 0 -46px; border-radius: 15px; border: -20px ; width: 140px; height: 140px;}	
+	.forma-icono1{position: absolute; left: 119%; top: 0; margin: 5px 0 0 -323px; border-radius: 10px; border: -10px ; width: 115px; height: 110px;}
+	.forma-icono2{position: absolute; left: 119%; top: 0; margin: 360px 0 0 -630px; border-radius: 18px; border: -10px ; width: 165px; height: 100px;}
+	
+	#green li a:hover{
+		color:rgb(228, 215, 89);
+		background-color:transparent;
+	}
+	
+	#green li a:link, #green li a:visited,#green li  a:active{
+		background-color:rgba(103, 130, 226, 0.72);
+
+	}
+	
+	#green li a:focus{
+		background-color:rgba(103, 130, 226, 0.72);
+		border-radius:12px;
+		border-color:#ffffff
+	}
+	
+	.navbar-nav > li > .dropdown-menu {
+		background-color:rgba(51, 51, 153, 0.99);
+		border-radius: 12px;
+		border-color:#ffffff
+	}
+	
+	#green li a:link, #green li a:visited, #green li a:active {
+	    background-color: rgba(51, 51, 153, 0.71);
+	    border-radius: 12px;
+	}
+
+	.social-buttons .facebook a:hover{
+		background-color:#146bef;
+	}
+
+	.social-buttons .instagram a:hover{
+		background-color:#cc0d9a;
+	}
+
+	.blue a, .blue p{
+		color:#337ab7;
+	}
+
+	.blue a:hover{
+		color: #1074f5;
+	}
+	
