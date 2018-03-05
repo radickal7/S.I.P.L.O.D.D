@@ -16,10 +16,10 @@ session_start();
 			 
 if(isset($_POST["archivo"]) and isset($_POST["fecha"])){
     if($_POST["archivo"]!='' and $_POST["fecha"]!=''){	
-        
-        $command='C:\AppServ\MySQL\bin\mysql.exe -h '.$host.' -u '.$user.' --password='.$pass.' '.$db.' < C:\AppServ\www\S.I.P.L.O.D.D\db\\$_POST["archivo"]';
+        include("../conexion/conexion.php");
+        $command='C:\AppServ\MySQL\bin\mysql.exe -h '.$host.' -u '.$user.' --password='.$clave.' '.$db.' < C:\AppServ\www\S.I.P.L.O.D.D\db\\'.$_POST["archivo"];
         system($command);
-    	echo "<script>alert('Respaldo realizado con exito, será desconectado')</script>";
+    	echo "<script>alert('Respaldo realizado con exito')</script>";
      
      }
      else{
@@ -28,7 +28,8 @@ if(isset($_POST["archivo"]) and isset($_POST["fecha"])){
  }
 
 			 
-$dirs = array_diff(scandir('../db/'), array('..', '.'));			 
+$dirs = array_diff(scandir('../db/'), array('..', '.'));
+
 			 
 			 
 ?>

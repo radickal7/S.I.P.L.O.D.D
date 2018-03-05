@@ -24,13 +24,9 @@ if(isset($_POST["nombre"]) and isset($_POST["clave"])){
         $datos = mysqli_fetch_array($busq);
         if($_POST['clave']==$datos['clave']){
             $dump_path = "../db/"; //input location for the backup to be saved
-            $host = "localhost";  //db host e.g.- localhost 
-            $user = "root";  //user e.g.-root
-            $pass = "1234";  //password
-            $db = "alcaldia";
             $name = $_POST["nombre"]."_".date('d-m-y').'.sql';
 
-            $command="C:\AppServ\MySQL\bin\mysqldump.exe -h $host -u $user --password=$pass $db > C:\AppServ\www\S.I.P.L.O.D.D\db\\$name"; 
+            $command="C:\AppServ\MySQL\bin\mysqldump.exe -h $host -u $user --password=$clave $db > C:\AppServ\www\S.I.P.L.O.D.D\db\\$name"; 
             system($command);
             echo "<script>alert('Respaldo realizado con exito')</script>";
         }
