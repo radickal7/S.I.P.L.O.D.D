@@ -113,7 +113,7 @@
  #portfolio .portfolio-item .portfolio-caption p,section h3.section-subheading{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:italic}
  section{padding:100px 0}
  section h2.section-heading{font-size:40px;margin-top:0;margin-bottom:10px}/*tamaño letra credito*/
- section h3.section-subheading{/*tamaño letra equipo de trabajo*/font-size:18px;text-transform:none;font-weight:400;margin-bottom:75px}@media (min-width:768px){section{padding:150px 0}}
+ section h3.section-subheading{/*tamaño letra equipo de trabajo*/font-size:18px;text-transform:none;font-weight:400;margin-bottom:75px}@media (min-width:768px){section{padding:50px 0}}
  .service-heading{margin:15px 0;text-transform:none}
  #portfolio .portfolio-item{margin:0 0 15px;right:0}
  #portfolio .portfolio-item .portfolio-link{display:block;position:relative;max-width:400px;margin:0 auto}

@@ -2,9 +2,9 @@
 session_start();
 		     if(isset($_SESSION['username'])){
 				
-                if($_SESSION['tipo_usuario']!='Administrador'){
+                if($_SESSION['tipo_usuario']=='Personal Administrativo'){
                     echo "<script>alert('No tienes permiso para ingresar aquí')</script>";
-                    echo "<script>window.location='login_adm.php'</script>";
+                    echo "<script>window.location='login_recp.php'</script>";
                 }
 				
 				} else{
@@ -43,7 +43,7 @@ include("../conexion/conexion.php");
         </div>
     </header>
 <div class="block">
-	<form action="report_pdf.php" name="form" method="post" enctype="multipart/form-data">
+	<form target="_blank" action="report_pdf.php" name="form" method="post" enctype="multipart/form-data">
                 <div class="container">
                     <div class="row">
 
@@ -203,7 +203,7 @@ $i=0;
                				<table>
 						        <tr>                      
 									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                        <div class="button">Descargar<input type="submit" name="adm" href="repor.php"/></div>	
+                                        <div class="button">Descargar<input type="submit" name="adm" /></div>	
                                     </td>
 									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 									
@@ -211,7 +211,7 @@ $i=0;
                                     
 								
 									<td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-										<a class="button" href="inicio_recp.php">Regresar</a>
+										<a class="button" href="reporte.php">Regresar</a>
 									</td>
 								</tr>
 							</table>

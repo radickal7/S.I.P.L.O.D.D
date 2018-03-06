@@ -39,7 +39,7 @@ else if(isset($_POST['numdoc']) && !empty ($_POST['numdoc']) &&
 			('$_POST[numdoc]','".$respo[0]."','".$depn[0]."','$_POST[fech]','$_POST[Hora]','$_POST[stat]','$_POST[descripcion]','$_POST[tipodocu]','".$filename."')";
 		$query = mysqli_query($con,$sql);
 		if($query){
-			echo "<script>alert('Datos registrados con exito ')</script>";
+			echo "<script>alert('El documento se ha registrado con exito ')</script>";
 			echo "<script>window.location='registrar_documen.php'</script>";
 		}else{
 			echo "<script>alert('Verifica que llenaste todos los campos ')</script>";

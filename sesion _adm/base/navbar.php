@@ -9,7 +9,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand page-scroll" href="#page-top">
+		<a class="navbar-brand page-scroll" href="inicio_adm.php">
 			<img src="img/img_2.png" style="display: inline-block;" width="55px" height="50px" class="img-responsive img-circle">
 			<span style="display: inline-block;">S.I.P.L.O.D.D </span>
 			</a>
@@ -68,9 +68,9 @@
 					<li class="divider"></li>
 					<li><a tabindex="-1" href="Restaurar.php">Restaurar Base de Datos</a></li>
 					<li class="divider"></li>
-					<li><a tabindex="-1" <a href="https://www.w3schools.com" target="_blank">Manual de Usuario</a>
+					<li><a tabindex="-1" <a href="../manual/manual de usuarios.pdf" target="_blank">Manual de Usuario</a>
 					<li class="divider"></li>
-					<li><a class="page-scroll" href="#team">Creditos</a>
+					<li><a class="page-scroll" href="inicio_adm.php#team">Creditos</a>
 					</li>
 				</ul>
 				</li>

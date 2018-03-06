@@ -8,7 +8,7 @@ ob_start();
 $content = '
 <style>
 #encabezado {padding:10px 0px; border-top: 1px solid; border-bottom: 1px solid; width:100%;}
-#encabezado .fila #col_1 {width: 15%}
+#encabezado .fila #col_1 {width: 20%}
 #encabezado .fila #col_2 {text-align:center; width: 55%}
 #encabezado .fila #col_3 {width: 15%}
 #encabezado .fila #col_4 {width: 15%}
@@ -36,9 +36,12 @@ $content = '
     <page_header>
 		<table id="encabezado">
             <tr class="fila">
-                <td id="col_1" >
-					
+               
+			   <td id="col_1" >
+				<img src="img/img_2.png" />					
 				</td>
+				
+
                 <td id="col_2">
 					<span id="span1"> ALCALDIA DEL MUNICIPIO LIBERTADOR </span>
 					<br>

@@ -2,9 +2,9 @@
 session_start();
 		     if(isset($_SESSION['username'])){
 				
-                if($_SESSION['tipo_usuario']!='Administrador'){
+                if($_SESSION['tipo_usuario']=='Personal Administrativo'){
                     echo "<script>alert('No tienes permiso para ingresar aquí')</script>";
-                    echo "<script>window.location='login_adm.php'</script>";
+                    echo "<script>window.location='login_recp.php'</script>";
                 }
 				
 				} else{
@@ -168,7 +168,7 @@ include("../conexion/conexion.php");
                                     
 								
 									<td> &nbsp&nbsp
-										<a class="button" href="inicio_adm.php">Regresar</a>
+										<a class="button" href="inicio_recp.php">Regresar</a>
 									</td>
 								</tr>
 							</table>

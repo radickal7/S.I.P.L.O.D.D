@@ -2,17 +2,13 @@
 session_start();
 		     if(isset($_SESSION['username'])){
 				
-                if($_SESSION['tipo_usuario']!='Administrador'){
-                    echo "<script>alert('No tienes permiso para ingresar aquí')</script>";
-                    echo "<script>window.location='login_adm.php'</script>";
-                }
 				
 				} else{
 				
 		     	echo "<script>alert('No has Iniciado Sesion')</script>";
-				echo "<script>window.location='login_adm.php'</script>";
+				echo "<script>window.location='login_pers.php'</script>";
 
-			 } 
+			 }
 			 
 		
 include("../conexion/conexion.php");	 

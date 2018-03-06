@@ -2,7 +2,7 @@
 session_start();
 		     if(isset($_SESSION['username'])){
 				
-                if($_SESSION['tipo_usuario']!='Administrador'){
+                if($_SESSION['tipo_usuario']=='Personal administrativo'){
                     echo "<script>alert('No tienes permiso para ingresar aquí')</script>";
                     echo "<script>window.location='login_adm.php'</script>";
                 }
@@ -121,15 +121,7 @@ $var5="";
                                             <label for="field-3">Contraseña *</label>
                                             <input type="tex"name="pw" id="field-2" value="<?PHP echo $var4; ?>" />
                                         </div>
-                                       	<div class="field-entry">
-                                            <label for="field-3">Seleccione el Tipo Usuario *</label>
-											<input type="tel" name="usua" id="field-1" value="<?PHP echo $var5; ?>" list="usua" />
-												<datalist id="usua">
-													<option value="Administrador">
-													<option value="Recepcionista">
-													<option value="Personal Administrativo">
-												</datalist>
-                                        </div>
+                                       	
                				<table>
 						        <tr>                      
 									<td>&nbsp&nbsp

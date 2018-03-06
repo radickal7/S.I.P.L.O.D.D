@@ -1,5 +1,16 @@
 <?php
 include("../conexion/conexion.php");
+
+$con=mysqli_connect($host,$user,$clave, $db)
+ 	or die("Problemas Al Conectar Con El Servidor o base de datos");
+
+$sql = "SELECT * FROM responsables WHERE cedu_resp ='".$_POST['cedula']."'";
+$busq=mysqli_query($con,$sql);
+
+if ($reg=mysqli_fetch_array($busq)){
+	echo "<script>alert('Ya existe este numero de cedula')</script>";
+	echo "<script>window.location='registrar_usua.php'</script>";
+}else{
  if(isset($_POST['nombre']) && !empty ($_POST['nombre']) &&
 	isset($_POST['apellido']) && !empty ($_POST['apellido']) &&
 	isset($_POST['cedula']) && !empty ($_POST['cedula']) &&
@@ -23,4 +34,5 @@ include("../conexion/conexion.php");
  		echo "<script>alert('Verifica que llenaste todos los campos y que las claves coincidan')</script>";
  		echo "<script>window.location='registrar_usua.php'</script>";
  	}
+}
 ?>

@@ -101,9 +101,7 @@ session_start();
 				<ul class="dropdown-menu">
 					<li><a tabindex="-1" href="modf_usua.php">Modificar Contraseña</a></li>
                     <li class="divider"></li>
-                    <li><a tabindex="-1" href="respaldar.php">Respaldar Base de Datos</a></li>
-					<li class="divider"></li>
-					<li><a tabindex="-1" <a href="https://www.w3schools.com" target="_blank">Manual de Usuario</a></li>
+					<li><a tabindex="-1" <a href="../manual/manual de usuarios.pdf" target="_blank">Manual de Usuario</a></li>
 					<li class="divider"></li>
 					<li><a class="page-scroll" href="#team">Creditos</a>
 					</li>
