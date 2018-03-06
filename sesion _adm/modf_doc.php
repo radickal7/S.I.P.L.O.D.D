@@ -33,7 +33,7 @@ $var9="";
 	 if(isset($_POST["adm"])){
 		 $boton=$_POST["adm"];
 		 if($boton=="Consultar"){
-			 $sql = "SELECT * FROM documentos WHERE num_doc='$numdoc'";
+			 $sql = "SELECT * FROM documentos WHERE num_doc='$consnumdoc'";
 			 $busq=mysqli_query($con,$sql);
 			 if($reg=mysqli_fetch_array($busq)){
 				 $var=$reg[0]; 
@@ -151,9 +151,38 @@ $var9="";
                                             
                                         </div>
                                     </div>
-                                 
+                        <table>
+							<tr>
+							
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+								<td>	
+									<div class="field-entry2">
+                                        <label for="field-2"> Inrgese Nº de Documento *</label>
+                                        <input type="text" name="consnumdoc" id="field-1" value="" title="Ingrese el Numero de Documento" />
+									</div>
+							
+                                        <div class="button">Buscar<input type="submit" name="adm" value="Consultar"/></div>	
+                                    </td>
+							<td>
+						</table>
 						<table>
-							<tr>   
+							<tr>
+								<td>	
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+								</td>                      
+									<td>
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+                                     </td>
+							</tr>
+						</table>						
+						<table>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+						<tr>
+							
 								<td>	
 										<div class="field-entry2">
                                             <label for="field-2"> Nº de Documento *</label>
@@ -304,13 +333,13 @@ $var9="";
                				<table>
 						        <tr>                      
 									<td>&nbsp&nbsp
-                                        <div class="button">Consultar<input type="submit" name="adm" value="Consultar"/></div>	
+                                        	
                                     </td>
-							<td>&nbsp&nbsp&nbsp
+							<td>&nbsp
 			
 							<td>&nbsp&nbsp
 									<div class="button">Modificar<input type="submit" name="adm" value="Modificar"/></div>	
-       								<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       								<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
 								
 									<td> &nbsp&nbsp

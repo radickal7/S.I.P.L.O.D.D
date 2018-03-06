@@ -32,7 +32,7 @@ $var5="";
 	 if(isset($_POST["adm"])){
 		 $boton=$_POST["adm"];
 		 if($boton=="Consultar"){
-			 $sql = "select * from responsables where cedu_resp='$cedula'";
+			 $sql = "select * from responsables where cedu_resp='$conscedula'";
 			 $busq=mysql_query($sql,$con);
 			 if($reg=mysql_fetch_array($busq)){
 				 $var=$reg[0]; 
@@ -106,6 +106,38 @@ $var5="";
                                         </div>
                                     </div>
                                     <form action="" name="form" method="post" >
+									
+									<table>
+							<tr>
+							
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+								<td>	
+									<div class="field-entry2">
+                                        <label for="field-2"> Inrgese Nº de Cedula *</label>
+                                        <input type="text" name="conscedula" id="field-1" value="" title="Ingrese el Numero de Documento" />
+									</div>
+							
+                                        <div class="button">Buscar<input type="submit" name="adm" value="Consultar"/></div>	
+                                    </td>
+							<td>
+						</table>
+						<table>
+							<tr>
+								<td>	
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+								</td>                      
+									<td>
+									<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+                                     </td>
+							</tr>
+						</table>						
+						<table>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                     </td>
+									
                                         <div class="field-entry">
                                             <label for="field-1">Cedula *</label>
                                             <input type="text" name="cedula" id="field-2" value="<?PHP echo $var3; ?>" pattern="[0-9]{8}" title="Ingrese solo los 8 Digitos de tu Cedula de Identidad"/>
@@ -133,17 +165,12 @@ $var5="";
                                         </div>
                				<table>
 						        <tr>                      
-									<td>&nbsp&nbsp
-                                        <div class="button">Consultar<input type="submit" name="adm" value="Consultar"/></div>	
-                                    </td>
-									<td>
-									&nbsp&nbsp&nbsp&nbsp
-									</td>
+									
 									<td>&nbsp&nbsp
 									<div class="button">Modificar<input type="submit" name="adm" value="Modificar"/></div>	
                                     </form>
 								<td>
-									&nbsp&nbsp&nbsp&nbsp
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 									</td>
 									
 									<td> &nbsp&nbsp
